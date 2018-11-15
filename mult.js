@@ -1,3 +1,7 @@
+/* Liam Reynolds, University of MA, Lowell. CS.
+liam_reynolds@student.uml.edu
+Copyright(c) 15 November 2018. All rights reserved.*/
+
 function createTable(){
   //input from table is stored as upper and lower bounds of axis
   var lowY = parseInt(document.getElementById("inloY").value);
