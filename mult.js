@@ -9,14 +9,13 @@ function getValues() {
     window.alert("Upper bound must be greater than lower bound.");
     exit(1);
   }
-
   //arrays for storing range of integers between two bounds
   var arrY = [];
   var arrX = [];
   var Ysize = upY - lowY + 1;
   var Xsize = upX - lowX + 1;
 
-  if(Ysize > 19 || Xsize > 19){
+  if(Ysize > 20 || Xsize > 20){
     window.alert("Range of bounds is too large to be displayed properly.");
     exit(1);
   }
