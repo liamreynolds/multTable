@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <!--FILE: http://weblab.cs.uml.edu/~lreynold/index.html
+  91.61 GUI Programming I
+  Assignment 6: Creating an Interactive Dynamic Table
+  Liam Reynolds, University of MA, Lowell. CS.
+  liam_reynolds@student.uml.edu
+  Copyright(c) 15 November 2018. All rights reserved.-->
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+      <link rel = "stylesheet" type = "text/css" href= "table.css">
+    <title> Multiplication Table </title>
+  </head>
+  <body>
+    
+    <div class = "container">
+      <div class = "side">
+          <table id = "multTable">
+          </table>
+      </div>
+      <div class = "mult">
+        <h1> mult. table </h1>
+          <form id = "multForm" role = "form">
+            <label for = "lowerY"> multipliers :</label>
+              <input id = "inloY" type = "number" class = "form-control"
+                placeholder = "lesser bound">
+              <input id = "inupY" type = "number" class = "form-control"
+                placeholder = "greater bound">
+            <hr id = "formLine">
+              <label for = "lowerX">multiplicands :</label>
+              <input id = "inloX" type = "number" class = "form-control"
+                placeholder = "lesser bound">
+              <input id = "inupX" type = "number" class = "form-control"
+                placeholder = "greater bound">
+          </form>
+        <br>
+      <button id = "sub" type = "submit" class = "btn btn-default"
+        onclick= "eraseTable(); getValues();"> Submit </button>
+        <hr id = endDivide>
+      </div>
+    </div>
+
+    <script src="mult.js"></script>
+
+  </body>
+</html>
