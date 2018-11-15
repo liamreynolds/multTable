@@ -1,4 +1,4 @@
-function getValues() {
+function createTable(){
   //input from table is stored as upper and lower bounds of axis
   var lowY = parseInt(document.getElementById("inloY").value);
   var upY = parseInt(document.getElementById("inupY").value);
@@ -16,7 +16,7 @@ function getValues() {
   var Xsize = upX - lowX + 1;
 
   if(Ysize > 20 || Xsize > 20){
-    window.alert("Range of bounds is too large to be displayed properly.");
+    window.alert("Table can only contain bounds with a range of <20.");
     exit(1);
   }
   var node, prod, newRow, rowEl;
