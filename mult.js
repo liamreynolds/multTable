@@ -23,6 +23,8 @@ function createTable(){
     window.alert("Table can only contain bounds with a range of <20.");
     exit(1);
   }
+
+  createTable(arrY, arrX);
   var node, prod, newRow, rowEl;
   var tab = document.getElementById("multTable");
 
@@ -53,6 +55,9 @@ function createTable(){
         rowEl.innerHTML = prod;
     }
   }
+}
+function createTable(arrY, arrX){
+
 }
 //function for resetting table to be called when submit button is pressed
 function eraseTable(){

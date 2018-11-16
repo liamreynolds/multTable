@@ -3,7 +3,7 @@ liam_reynolds@student.uml.edu
 Copyright(c) 15 November 2018. All rights reserved.*/
 
 body{
-  background: #202020;
+  background: #181818;
   font-family: tahoma;
 }
 .container{ /* grid containter aligns and formats table and form dynamically*/
@@ -31,7 +31,7 @@ h1{
   margin-top: 20px;
   padding: 6%;
   border-radius: 25px;
-  background-color: #F0F0F0;
+  background-color: #E0E0E0;
 }
 #formLine{
   border: .5px solid #BEBEBE;
